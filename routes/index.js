@@ -15,3 +15,6 @@ exports.menubar = function(req, res){
 exports.login = function(req, res){
   res.render('login');
 };
+exports.head = function(req, res){
+  res.render('head');
+};

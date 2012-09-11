@@ -13,7 +13,6 @@ html
         script(src="javascripts/todolist_app.js")
     body 
         include menubar
-        include login
         div 
             block content
         div
