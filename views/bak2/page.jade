@@ -1,0 +1,51 @@
+!!!
+html
+    head
+        title Just Do It!
+        meta(name="viewport",content="width=device-width,initial-scale=1.0")
+        meta(http-equiv="content-type",content="text/html;charset=utf-8")
+        link(href="stylesheets/bootstrap.css",rel="stylesheet",type="text/css")
+        link(href="stylesheets/bootstrap-responsive.css",rel="stylesheet",type="text/css")
+        link(href="stylesheets/todolist.css",rel="stylesheet",type="text/css")
+        script(src="javascripts/jquery-1.7.2.js")
+        script(src="javascripts/bootstrap.js")
+        script(language="javascript",type="text/javascript",src="datepicker/WdatePicker.js")
+        script(src="javascripts/todolist_app.js")
+    body
+        .navbar.navbar-fixed-top
+            .navbar-inner
+                .span6.offset3.msgbox
+                    a.brand(href="./index.html")
+                        i.icon-arrow-left
+                    ul.nav
+                        li.dropdown: a.dropdown-toggle(data-toggle="dropdown",href="#")
+                            選單
+                            b.caret
+                            ul.dropdown-menu
+                                li
+                                    a(href="./index.html")
+                                            清單
+                                li
+                                    a(href="#")
+                                            已完成
+                                li
+                                    a(href="#")
+                                            刪除
+        .container
+            .row.content
+                .span6.offset3
+                    .alert.alert-success.list-font
+                        a.accordion-toggle.close(href="#edit",data-parent="#accordion2",data-toggle="collapse")
+                            i.icon-pencil
+                            編輯
+                        input#complete(type="checkbox")
+                        #listtitle
+                        #listmemo
+                        #accordion2.accordion
+                            .accordion-group
+                                #edit.accordion-body.collapse
+                                    .accordion-inner
+                                        input#time.Wdate(type="text",onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})")
+                                        textarea#listmemo.span5(rows="3")
+                                        button.btn.btn-primary(type="submit")
+                                                儲存

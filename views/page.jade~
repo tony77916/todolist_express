@@ -1,0 +1,18 @@
+extends layout
+
+block content
+        .container
+            .row.content
+                .span6.offset3
+                    .alert.alert-success.list-font
+                        p
+                            標題:
+                        input#listtitle.span5(type="text",value="Eat breakfast！")
+                        p
+                            日期/時間:
+                        input#date_time.span5.Wdate(type="text",onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})")
+                        p
+                            備註:
+                        textarea#listmemo.span5(rows="3")
+                        button.btn.btn-primary(type="submit")
+                            新增
