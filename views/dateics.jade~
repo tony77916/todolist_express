@@ -1,0 +1,6 @@
+script(type="text/javascript")
+    var rating = false;
+link(type="text/css",href="stylesheets/dateics.css",rel="stylesheet")
+script(type="text/javascript")
+    var MS = MS || {};
+script(type="text/javascript",src="javascripts/dateics.js")

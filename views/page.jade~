@@ -10,7 +10,7 @@ block page
                         input#listtitle.span5(type="text",value="Eat breakfast！")
                         p
                             日期/時間:
-                        input#date_time.span5.Wdate(type="text",onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})")
+                        #i.i-txt
                         p
                             備註:
                         textarea#listmemo.span5(rows="3")

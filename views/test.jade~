@@ -1,0 +1,14 @@
+!!!
+html
+    head
+        script(type="text/javascript")
+            var rating = false;
+        link(type="text/css",href="dateics.css",rel="stylesheet")
+        script(type="text/javascript")
+            var MS = MS || {};
+            MS.path = MS.paths || {}
+            MS.path.img = '/Content/img/';
+            MS.path.zeroclipboard = '/Content/zeroclipboard/ZeroClipboard.swf';
+        script(type="text/javascript",src="dateics.js")
+    body
+        input#i.i-txt

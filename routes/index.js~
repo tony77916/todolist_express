@@ -12,3 +12,12 @@ exports.page = function(req, res){
 exports.menubar = function(req, res){
   res.render('menubar');
 };
+exports.login = function(req, res){
+  res.render('login');
+};
+exports.dateics = function(req, res){
+  res.render('dateics');
+};
+exports.test = function(req, res){
+  res.render('test');
+};
