@@ -1,0 +1,5 @@
+script
+    function a(){
+        chkbox0.checked ? ft0.innerHTML = '<s>Eat breakfast！qqqqqqqqqqqqqqqqqqqqqqq</s>' : ft0.innerHTML = 'Eat breakfast！qqqqqqqqqqqqqqqqqqqqqqqqqq';
+    }
+    window.onload = a ;
