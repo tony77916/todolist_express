@@ -9,7 +9,8 @@
 }
 .msgbox {
     white-space: nowrap;
-    padding-left: 20px;
+    float:left;
+    list-style: none outside none;
 }
 .msgbox2 {
     margin-top: 7px;
@@ -31,4 +32,8 @@ input[type="checkbox"] {
 }
 .accordion-group,.accordion-inner {
     border: 0px;
+}
+[class*="span"], .row-fluid [class*="span"] {
+    display: inline;
+    width: -moz-available;
 }

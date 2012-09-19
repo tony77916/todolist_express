@@ -3,28 +3,37 @@ extends layout
 block content
     .container
         .row.content
-            .span6.offset3
-                .span6.alert-success
-                    .span1
+            .span6.offset3.msgbox
+                ul.msgbox
+                    li.span1
+                        完成
+                    li.span2
+                        標題
+                    li.span1
+                        期限
+                    li.span1
+                        刪除
+                ul.span6.alert-success.msgbox
+                    li.span1
                         input#chkbox0(type="checkbox",value="1",onclick ="a();")
-                    .span2
+                    li.span2
                         span#ft0
                             Eat breakfast！
-                    .span1
+                    li.span1
                         a.btn.btn-success(href="/page")
                             過期
-                    .span1
+                    li.span1
                         a(href="/page")
                             img(src="/images/delete.png")
-                .span6.alert-info
-                    .span1
+                ul.span6.alert-info.msgbox
+                    li.span1
                         input(type="checkbox")
-                    .span2
+                    li.span2
                             早點睡！
-                    .span1
+                    li.span1
                         a.btn.btn-warning(href="/login")
                             無限
-                    .span1
+                    li.span1
                         a(href="/page")
                             img(src="/images/delete.png")
                                 
